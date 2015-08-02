@@ -1,0 +1,83 @@
+.imageSlideshow {
+  overflow: hidden;
+  position: relative;
+}
+.imageSlideshow .slideshow-content {
+  margin: 0;
+  padding: 0;
+}
+.imageSlideshow .slideshow-content img {
+  display: inline-block;
+}
+.imageSlideshow .slideshow-content,
+.imageSlideshow .listDots {
+  position: relative;
+  list-style-type: none;
+}
+.imageSlideshow .slideshow-content li,
+.imageSlideshow .listDots li {
+  display: inline-block;
+  float: left;
+}
+.imageSlideshow .listDots {
+  text-align: center;
+}
+.imageSlideshow .listDots li {
+  float: none;
+  margin: 10px;
+}
+.imageSlideshow .dot {
+  height: 14px;
+  width: 14px;
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.imageSlideshow .activeDot {
+  opacity: 0.8;
+}
+.imageSlideshow .arrow {
+  opacity: 0.8;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}
+.imageSlideshow .arrow:hover {
+  opacity: 1.0;
+}
+.imageSlideshow .leftArrow {
+  background: url('bg_direction_nav.png') 0px -2px;
+  left: -2px;
+}
+.imageSlideshow .rightArrow {
+  background: url('bg_direction_nav.png') -46px -1px;
+  right: -2px;
+}
+@media (max-width: 747px) {
+  .imageSlideshow .arrow {
+    width: 35px;
+    height: 35px;
+  }
+  .imageSlideshow .leftArrow {
+    background: url('bg_direction_nav.png') -3px -5px;
+    left: -2px;
+  }
+  .imageSlideshow .rightArrow {
+    background: url('bg_direction_nav.png') -50px -5px;
+    right: -2px;
+  }
+}

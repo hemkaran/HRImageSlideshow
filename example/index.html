@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+</head>
+<!-- Css file of the widget -->
+<link rel="stylesheet" href="../src/imageSlideshow.css"/>
+
+<!-- jQuery and jQuery UI - dependency of the widget -->
+<script src=jquery-1.10.2.js></script>
+<script src="jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+
+<!-- Javascript file of the widget -->
+<script src=../src/imageSlideshow.js></script>
+
+<script>
+    $(window).load(function () {
+        var slideshow = $(".imageSlideshow").imageSlideshow({
+            easing: "easeOutCubic",
+            controlNav : false,
+            duration: "600",
+            animationInterval : "5000",
+            keyboard: true,
+            startAt:6
+        });
+
+        slideshow.imageSlideshow('watchResponsiveness');
+    });
+</script>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        color: white;
+    }
+    body {
+        background-color: seagreen;
+        min-width: 320px;
+    }
+    .slideWrapper {
+        /*border: 5px solid white;
+        border-radius: 5px;*/
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+        width: 50%;
+        height: 400px;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="slideWrapper imageSlideshow">
+        <ul class="slideshow-content">
+            <li>
+                <img src="" data-src="images/1.jpg" alt="img0"/>
+            </li>
+            <li>
+                <img src="" data-src="images/2.jpg" alt="img1"/>
+            </li>
+            <li>
+                <img src="" data-src="images/3.jpg" alt="img2"/>
+            </li>
+            <li>
+                <img src="" data-src="images/4.jpg" alt="img3"/>
+            </li>
+            <li>
+                <img src="" data-src="images/5.jpg" alt="img4"/>
+            </li>
+            <li>
+                <img src="" data-src="images/6.jpg" alt="img5"/>
+            </li>
+            <li>
+                <img src="" data-src="images/7.jpg" alt="img6"/>
+            </li>
+            <li>
+                <img src="" data-src="images/8.jpg" alt="img7"/>
+            </li>
+            <li>
+                <img src="" data-src="images/9.jpg" alt="img8"/>
+            </li>
+            <li>
+                <img src="" data-src="images/10.PNG" alt="img9"/>
+            </li>
+            <li>
+                <img src="images/11.jpg" alt="img10"/>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
